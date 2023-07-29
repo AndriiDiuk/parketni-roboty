@@ -583,7 +583,7 @@ a {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url(./assets/bg-header-fc1fc049.jpg);
+	background-image: url(bg-header-fc1fc049.jpg);
 	transition: var(--transition)
 }
 
