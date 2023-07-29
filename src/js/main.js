@@ -1,4 +1,5 @@
-import { startAnimation } from "./animation.js";
+import { startAnimation, startScrollAnimation } from "./animation.js";
 
 
 startAnimation();
+startScrollAnimation();
