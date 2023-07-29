@@ -166,12 +166,12 @@ const init = () => {
 		overlay.insertAdjacentHTML('beforeend', `
 			<div id="videotube-modal-loading">Загрузка...</div>
 			<div id="videotube-modal-close">
-			<img class="nav-header__close-img" src="./src/assets/icons/close.svg" alt="Закрити меню">
+			<img class="nav-header__close-img" src="./assets/close-40eede69.svg" alt="Закрити">
 			</div>
 			<div id="videotube-modal-container">
-				<iframe src="https://youtube.com/embed/${idVideo}?autoplay=1" 
+				<iframe src="https://youtube.com/embed/${idVideo}?autoplay=1"
 					frameborder="0"
-					id="videotube-modal" 
+					id="videotube-modal"
 					allowfullscreen
 					allow="autoplay">
 				</iframe>
