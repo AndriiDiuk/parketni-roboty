@@ -1,0 +1,82 @@
+.contacts {
+	@include adaptiveValue("padding-top", 65, 30);
+	@include adaptiveValue("padding-bottom", 65, 30);
+
+	&__container {
+		@include flex;
+	}
+
+	&__wrap {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		@include adaptiveValue("padding-top", 54, 30);
+		@include adaptiveValue("padding-bottom", 54, 30);
+		@include adaptiveValue("padding-left", 54, 30);
+		@include adaptiveValue("padding-right", 54, 30);
+		width: 100%;
+		max-width: rem(1010);
+		border: rem(2) solid var(--clr-title);
+
+		@media (max-width: em(736)) {
+			@include flex(column, flex-start, start);
+			width: 90%;
+		}
+	}
+
+	&__left {
+		@include flex(column, flex-start, start);
+		gap: rem(14);
+		@include adaptiveValue("padding-bottom", 20, 14);
+	}
+
+	&__title {
+		@include flex(row, flex-start);
+		font-family: var(--fn-family-title);
+		text-transform: uppercase;
+		font-weight: 300;
+		@include adaptiveValue("width", 258, 160);
+		@include adaptiveValue("font-size", 32, 18);
+		line-height: 1.2;
+		color: var(--clr-title);
+	}
+
+	&__subtitle {
+		@include adaptiveValue("font-size", 18, 16);
+		@include adaptiveValue("width", 160, 160);
+
+		@media (max-width: em(280)) {
+			width: rem(100);
+		}
+	}
+
+	&__right {
+		@include flex(column, flex-end, end);
+
+	}
+
+	&__phone-wrap {
+		@include flex(row);
+		@include adaptiveValue("gap", 26, 16);
+		@include adaptiveValue("padding-top", 22, 12);
+		@include adaptiveValue("padding-bottom", 22, 12);
+		@include adaptiveValue("padding-left", 52, 18);
+		@include adaptiveValue("padding-right", 52, 18);
+		background: #1B1B1B;
+
+		@media (max-width: em(280)) {
+			padding: rem(8);
+		}
+	}
+
+	&__icons {
+		@include adaptiveValue("width", 30, 20);
+
+		@media (max-width:$mobileSmall) {
+			display: none;
+		}
+	}
+
+	&__link {
+		@include adaptiveValue("font-size", 28, 16);
+	}
+}

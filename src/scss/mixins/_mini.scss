@@ -1,0 +1,19 @@
+@mixin footerToBottom {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+}
+
+@mixin pseudo() {
+	content: "";
+	display: block;
+}
+
+@mixin absoluteCenter($top: 50%, $left: 50%) {
+	position: absolute;
+	top: $top;
+	left: $left;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}

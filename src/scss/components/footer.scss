@@ -1,0 +1,128 @@
+.footer {
+	background: var(--clr-bg-footer);
+	@include adaptiveValue("padding-top", 80, 30);
+	@include adaptiveValue("padding-bottom", 40, 30);
+
+
+	&__container {
+		@include flex(row, space-between, start);
+		gap: rem(10);
+
+		@media (max-width:$tablet) {
+			@include flex(column-reverse);
+			@include adaptiveValue("gap", 30, 20);
+		}
+	}
+
+	&__left {
+		@include flex(column, flex-start, start);
+		@include adaptiveValue("gap", 14, 12);
+		font-size: rem(16);
+
+		@media (max-width:$tablet) {
+			@include flex;
+		}
+	}
+
+	&__left-text {
+		@include adaptiveValue("width", 268, 120);
+
+		@media (max-width:$tablet) {
+			width: 97%;
+			text-align: center;
+		}
+	}
+
+	&__left-copyright {
+		color: var(--clr-accent);
+	}
+
+	&__center {
+		@include flex;
+		gap: rem(16);
+	}
+
+
+	&__wrap {
+		@include flex(row);
+		@include adaptiveValue("gap", 20, 10);
+		font-size: rem(16);
+		color: var(--clr-title);
+		flex-wrap: wrap;
+	}
+
+	&__link {
+		transition: var(--transition);
+
+		&:hover {
+			color: var(--clr-text);
+		}
+	}
+
+	&__logo-link {
+		cursor: pointer;
+	}
+
+	&__right {
+		@include flex(column, flex-end, end);
+		@include adaptiveValue("gap", 14, 12);
+
+		@media (max-width:$tablet) {
+			@include flex;
+		}
+	}
+
+	&__number {
+		@include flex(row);
+		gap: rem(12);
+	}
+
+	&__number-link {
+		color: var(--clr-title);
+		letter-spacing: 1px;
+		cursor: pointer;
+		transition: var(--transition);
+
+		&:hover {
+			color: var(--clr-text);
+		}
+	}
+
+
+	&__btns {
+		@include flex(row);
+		gap: rem(12);
+	}
+
+	&__btn-link {
+		min-width: rem(30);
+		min-height: rem(30);
+		@include hover;
+		padding: rem(8) rem(8);
+		border: .5px solid var(--clr-title);
+		border-radius: var(--border);
+		cursor: pointer;
+		z-index: 1;
+		transition: all 0.6s ease 0s;
+
+		&:hover {
+			border: .5px solid var(--clr-body);
+		}
+
+		&::before {
+			@include pseudo;
+			position: absolute;
+			width: 0;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: var(--clr-body);
+			z-index: -1;
+			transition: var(--transition);
+		}
+
+		&:hover::before {
+			width: 100%;
+		}
+	}
+}

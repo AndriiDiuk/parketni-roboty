@@ -1,0 +1,33 @@
+@mixin burger {
+	display: none;
+
+	@media (max-width: $tablet) {
+		display: block;
+		position: relative;
+		min-width: 38px;
+		min-height: 34px;
+		border-radius: 2px;
+		cursor: pointer;
+		z-index: 5;
+
+		span,
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			transition: all 0.3s ease 0s;
+			transform: translate(-50%, -50%);
+			width: 24px;
+			height: 2px;
+			background-color: var(--clr-title);
+		}
+
+		&::before {
+			top: 8px;
+		}
+
+		&::after {
+			bottom: 6px;
+		}
+	}
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/src/assets/favicon/favicon.ico" />
+	<link rel="preload" href="./src/assets/fonts/RubikLight.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./src/assets/fonts/RubikBold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./src/assets/fonts/RubikRegular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./src/assets/fonts/RubikSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./src/assets/fonts/GilroyRegular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./src/assets/fonts/GilroyMedium.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./src/assets/fonts/GilroySemiBold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./src/assets/fonts/GilroyBold.woff2" as="font" type="font/woff2" crossorigin>
+
+	<link rel="stylesheet" href="./src/scss/style.scss">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Паркетні роботи у Львові та області" />
+
+	<script src="/src/js/lib/gsap.min.js"></script>
+	<script defer src="/src/js/lib/videotube.js"></script>
+	<script type="module" src="/src/js/main.js"></script>
+	<script type="module" src="/src/js/events.js"></script>
+
+	<title>Паркетні роботи</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__top">
+				<a href="#" class="header__logo-link">
+					<picture>
+						<source srcset="./src/assets/logo-mobile.svg" media="(max-width:720px)">
+						<img src="./src/assets/logo.svg" alt="Логотип Паркетні Роботи" class="header__logo">
+					</picture>
+				</a>
+				<div class="header__contacts">
+					<div class="header__links-wrap">
+						<span>Зв'язатись з нами</span>
+						<div class="header__btns ">
+							<a class="header__btn-link" href="https://www.instagram.com/parketni_roboty/" target="_blank">
+								<img src="./src/assets/icons/instagram.svg" alt="Instagram іконка" class="header__btn-icon">
+								<span>Instagram</span>
+							</a>
+							<a class="header__btn-link" href="#">
+								<img src="./src/assets/icons/telegram.svg" alt="Telegram іконка" class="header__btn-icon">
+								<span>Telegram</span>
+							</a>
+							<a class="header__btn-link" href="viber://chat?number=%2B3800933472317">
+								<img src="./src/assets/icons/viber.svg" alt="Viber іконка" class="header__btn-icon">
+								<span>Viber</span>
+							</a>
+						</div>
+					</div>
+					<div class="header__phone-wrap">
+						<span>Телефонуйте</span>
+						<div class="header__phone phone-number">
+							<img class="phone-number__icon" src="/src/assets/icons/phone-number__icon.svg"
+								alt="Іконка телефона">
+							<a class="phone-number__link" href="tel:+380933472317">+38 (093) 347 23 17</a>
+						</div>
+					</div>
+					<button class="burger"><span></span></button>
+				</div>
+			</div>
+			<div class="header__center">
+				<nav class="header__nav nav-header">
+					<button class="nav-header__close-burger">
+						<img class="nav-header__close-img" src="./src/assets/icons/close.svg" alt="Закрити меню">
+					</button>
+					<ul class="nav-header__wrap">
+						<li class="nav-header__item"><a class="nav-header__link" href="#">Головна</a></li>
+						<li class="nav-header__item"><a class="nav-header__link" href="#advantages">Переваги</a></li>
+						<li class="nav-header__item"><a class="nav-header__link" href="#price">Ціни</a></li>
+						<li class="nav-header__item"><a class="nav-header__link" href="#contacts">Контакти</a></li>
+						<li class="nav-header__item"><a class="nav-header__link" href="#our-works">Наші роботи</a></li>
+						<li class="nav-header__item"><a class="nav-header__link" href="#equipment">Обладнання</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__bottom">
+				<div class="header__title-wrap">
+					<h1 class="header__title">Паркетні роботи будь-якої складності у Львові та області
+						<!-- <span class="header__title-price">від 150 грн./м<sup>2</sup></span> -->
+					</h1>
+				</div>
+				<div class="header__video-wrap">
+					<a href="https://www.youtube.com/watch?v=lY2552fJYcM" class="tube">
+						<img class="header__video-btn" src="./src/assets/icons/bnt-play/btn.svg" alt="Кнопка">
+					</a>
+					<img class="header__video-circle1" src="./src/assets/icons/bnt-play/circle-1.svg" alt="Елемент кнопки">
+					<img class="header__video-circle0" src="./src/assets/icons/bnt-play/circle-0.svg" alt="Елемент кнопки">
+					<p>Як ми працюємо</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="question" id="advantages">
+			<div class="question__container">
+				<div class="question__isons-wrap">
+					<div class="question__icon icon-question">
+						<div class="icon-question__head">
+							<span class="icon-question__title">Пил</h3>
+								<img src="./src/assets/icons/icon-question.svg" alt="Знак питання" class="icon-question__image">
+						</div>
+						<div class="icon-question__body">
+							Сучасне обладнання, яке вловлює 99% пилу
+						</div>
+					</div>
+					<div class="question__icon icon-question">
+						<div class="icon-question__head">
+							<span class="icon-question__title">Терміни</span>
+							<img src="./src/assets/icons/icon-question.svg" alt="Знак питання" class="icon-question__image">
+						</div>
+						<div class="icon-question__body">
+							50 м<sup>2</sup> виконуємо за 1 день
+						</div>
+					</div>
+					<div class="question__icon icon-question">
+						<div class="icon-question__head">
+							<span class="icon-question__title">Етап</h3>
+								<img src="./src/assets/icons/icon-question.svg" alt="Знак питання" class="icon-question__image">
+						</div>
+						<div class="icon-question__body">
+							Робота виконується, після всіх вологих робіт на об’єкті
+						</div>
+					</div>
+					<div class="question__icon icon-question">
+						<div class="icon-question__head">
+							<span class="icon-question__title">Ціна</h3>
+								<img src="./src/assets/icons/icon-question.svg" alt="Знак питання" class="icon-question__image">
+						</div>
+						<div class="icon-question__body">
+							Узгодимо фіксовану ціну відповідно до об’єму робіт
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="advantages">
+			<div class="advantages__container">
+				<div class="advantages__cards-wrap">
+					<div class="advantages__card ">
+						<img src="./src/assets/icons/advantages/13-years.svg" alt="13 років" class="advantages__card-image">
+						<h3 class="advantages__card-text">13 років<br />досвіду</h3>
+					</div>
+					<div class="advantages__card">
+						<img src="./src/assets/icons/advantages/mechanic.svg" alt="Німецьке обладнання"
+							class="advantages__card-image">
+						<h3 class="advantages__card-text ">Німецьке<br />обладнання</h3>
+					</div>
+					<div class="advantages__card ">
+						<img src="./src/assets/icons/advantages/eco.svg" alt="Еко лаки" class="advantages__card-image">
+						<h3 class="advantages__card-text">Еко<br />лаки </h3>
+					</div>
+				</div>
+				<div class="advantages__title section-head">
+					<h2 class="section-head__title">ЧОМУ МИ?</h2>
+					<span class="section-head__subtitle">Працюємо швидко, якісно, без пилу та запаху</span>
+				</div>
+			</div>
+		</section>
+		<section class="price" id="price">
+			<div class="price__container">
+				<div class="price__item">
+					<div class="price__info-wrap ">
+						<h2 class="price__title">Реставрація</h2>
+						<div class="price__table-wrap">
+							<div class="price__table-item">
+								<span class="price__name">Шліфування паркету</span>
+								<span class="price__num">120 грн./м<sup>2</sup></span>
+							</div>
+							<div class="price__table-item">
+								<span class="price__name">Шпаклювання паркету</span>
+								<span class="price__num">30 грн./м<sup>2</sup></span>
+							</div>
+							<div class="price__table-item">
+								<span class="price__name">Лакування паркету в 1 шар</span>
+								<span class="price__num">25 грн./м<sup>2</sup></span>
+							</div>
+						</div>
+					</div>
+					<img src="./src/assets/image/price/restoration.jpg" alt="Реставрація" class="price__img">
+				</div>
+				<div class="price__item price__item--revers">
+					<div class="price__info-wrap ">
+						<h2 class="price__title">Тонування</h2>
+						<div class="price__table-wrap">
+							<div class="price__table-item">
+								<span class="price__name">Шліфування паркету</span>
+								<span class="price__num">200 грн./м<sup>2</sup></span>
+							</div>
+							<div class="price__table-item">
+								<span class="price__name">Шпаклювання паркету</span>
+								<span class="price__num">50 грн./м<sup>2</sup></span>
+							</div>
+							<div class="price__table-item">
+								<span class="price__name">Тонування паркету</span>
+								<span class="price__num">100 грн./м<sup>2</sup></span>
+							</div>
+							<div class="price__table-item">
+								<span class="price__name">Нанесення захисного покриття в 1 шар</span>
+								<span class="price__num">50 грн./м<sup>2</sup></span>
+							</div>
+						</div>
+					</div>
+					<img src="./src/assets/image/price/toning.jpg" alt="Тонування" class="price__img">
+				</div>
+				<div class="price__item">
+					<div class="price__info-wrap ">
+						<h2 class="price__title">Монтаж підлоги</h2>
+						<div class="price__table-wrap">
+							<div class="price__table-item">
+								<span class="price__name">Шліфування стежки</span>
+								<span class="price__num">100 грн./м<sup>2</sup></span>
+							</div>
+							<div class="price__table-item">
+								<span class="price__name">Грунтування стежки</span>
+								<span class="price__num">20 грн./м<sup>2</sup></span>
+							</div>
+							<div class="price__table-item">
+								<span class="price__name">Монтаж фанери (OSB)</span>
+								<span class="price__num">100 грн./м<sup>2</sup></span>
+							</div>
+							<div class="price__table-item">
+								<span class="price__name">Шліфування фанери (OSB)</span>
+								<span class="price__num">50 грн./м<sup>2</sup></span>
+							</div>
+							<div class="price__table-item">
+								<span class="price__name">Монтаж паркету</span>
+								<span class="price__num">від 250 грн./м<sup>2</sup></span>
+							</div>
+						</div>
+					</div>
+					<img src="./src/assets/image/price/assembling.jpg" alt="Монтаж" class="price__img">
+				</div>
+			</div>
+		</section>
+		<section class="contacts" id="contacts">
+			<div class="contacts__container">
+				<div class="contacts__wrap">
+					<div class="contacts__left">
+						<div class="contacts__title">ПОТРІБНА КОНСУЛЬТАЦІЯ ?</div>
+						<div class="contacts__subtitle">зв'яжіться з нами</div>
+					</div>
+					<div class="contacts__right">
+						<div class="contacts__phone-wrap">
+							<img class="contacts__icons" src="./src/assets//icons/phone-number-icon-white.svg" />
+							<a class="contacts__link" href="tel:+380933472317">+38 (093) 347 23 17</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <section class="our-works" id="our-works">
+			<div class="our-works__container">
+				<h2 class="our-works__title">Наші роботи</h2>
+				<div class="our-works__image-wrap">
+					<img src="./src/assets/image/our-works/our-works-01.JPG" class="our-works__image" alt="Наші роботи">
+					<img src="./src/assets/image/our-works/our-works-02.JPG" class="our-works__image" alt="Наші роботи">
+					<img src="./src/assets/image/our-works/our-works-03.JPG" class="our-works__image" alt="Наші роботи">
+					<img src="./src/assets/image/our-works/our-works-04.JPG" class="our-works__image" alt="Наші роботи">
+					<img src="./src/assets/image/our-works/our-works-05.JPG" class="our-works__image" alt="Наші роботи">
+					<img src="./src/assets/image/our-works/our-works-06.JPG" class="our-works__image" alt="Наші роботи">
+				</div>
+			</div>
+		</section> -->
+		<section class="equipment" id="equipment">
+			<div class="equipment__container">
+				<div class="equipment__card-wrap">
+					<div class="equipment__card">
+						<div class="equipment__image-wrap">
+							<img src="./src/assets/image/equipment/lagler-flip.png" class="equipment__card-image"
+								alt="Lagler Flip" />
+						</div>
+						<div class="equipment__card-info">
+							<span class="equipment__card-title">Lagler Flip</span>
+							<span class="equipment__card-text">Призначена для обробки дерев'яних і пробкових поверхонь підлоги
+								вздовж стін, кутів, під радіаторними системами опалення, сходах та інших важкодоступних
+								місцях.</span>
+						</div>
+					</div>
+					<div class="equipment__card">
+						<div class="equipment__image-wrap">
+							<img src="./src/assets/image/equipment/lagler-trio.png" class="equipment__card-image"
+								alt="Lagler Flip" />
+						</div>
+						<div class="equipment__card-info">
+							<span class="equipment__card-title">Lagler Trio</span>
+							<span class="equipment__card-text">Застосовується для тонкого шліфування дерев'яних і пробкових
+								покриттів.</span>
+						</div>
+					</div>
+					<div class="equipment__card">
+						<div class="equipment__image-wrap">
+							<img src="./src/assets/image/equipment/lagler-hummel.png" class="equipment__card-image"
+								alt="Lagler Flip" />
+						</div>
+						<div class="equipment__card-info">
+							<span class="equipment__card-title">Lagler Hummel</span>
+							<span class="equipment__card-text">Призначена для професіонального цикльовані шліфування паркетних
+								покриттів. Застосовується для очищення старого лаку і забруднення при реставрації
+								паркету.</span>
+						</div>
+					</div>
+				</div>
+				<div class="equipment__title-wrap">
+					<h2 class="equipment__title">Наше Обладнання</h2>
+					<span class="equipment__subtitle">Використовуємо в роботі сучасне обладнання німецької фірми
+						<b>LÄGLER</b></span>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__left">
+				<span class="footer__left-text">Виконуємо повний цикл робіт
+					з дерева від укладання, шліфування, лакування та покриття лаком</span>
+				<span class="footer__left-copyright">© Parketni Roboty - 2023</span>
+			</div>
+			<div class="footer__center">
+				<nav class="footer__nav">
+					<ul class="footer__wrap">
+						<li class="footer__item"><a class="footer__link" href="#">Головна</a></li>
+						<li class="footer__item"><a class="footer__link" href="#advantages">Переваги</a></li>
+						<li class="footer__item"><a class="footer__link" href="#price">Ціни</a></li>
+						<li class="footer__item"><a class="footer__link" href="#contacts">Контакти</a></li>
+						<li class="footer__item"><a class="footer__link" href="#our-works">Наші роботи</a></li>
+						<li class="footer__item"><a class="footer__link" href="#equipment">Обладнання</a></li>
+					</ul>
+				</nav>
+				<a href="#" class="footer__logo-link">
+					<img src="./src/assets/logo.svg" alt="Логотип" class="footer__logo">
+				</a>
+			</div>
+			<div class="footer__right">
+				<div class="footer__number">
+					<img class="footer__number-icon" src="/src/assets/icons/phone-number__icon.svg" alt="Іконка телефона">
+					<a class="footer__number-link" href="tel:+380933472317">+38 (093) 347 23 17</a>
+				</div>
+				<div class="footer__links-wrap">
+					<div class="footer__btns">
+						<a class="footer__btn-link" href="https://www.instagram.com/parketni_roboty/" target="_blank">
+							<img src="./src/assets/icons/instagram.svg" alt="Instagram іконка" class="footer__btn-icon">
+						</a>
+						<a class="footer__btn-link" href="#">
+							<img src="./src/assets/icons/telegram.svg" alt="Telegram іконка" class="footer__btn-icon">
+						</a>
+						<a class="footer__btn-link" href="viber://chat?number=%2B3800933472317">
+							<img src="./src/assets/icons/viber.svg" alt="Viber іконка" class="footer__btn-icon">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
